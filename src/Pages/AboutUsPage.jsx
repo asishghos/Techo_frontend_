@@ -57,7 +57,19 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
+    <div className="min-h-screen relative overflow-hidden">
+      {/* Main background with animated gradients */}
+      <div className="fixed inset-0 bg-gradient-to-b from-gray-900 to-gray-800">
+        {/* Animated background patterns */}
+        <div className="absolute inset-0 overflow-hidden opacity-30">
+          <div className="absolute top-0 -right-1/2 w-full h-full bg-gradient-to-bl from-blue-400 to-purple-500 rounded-full blur-3xl transform rotate-12 animate-pulse" />
+          <div className="absolute -bottom-1/2 -left-1/2 w-full h-full bg-gradient-to-tr from-blue-500 to-cyan-400 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full blur-3xl animate-pulse delay-700" />
+        </div>
+      </div>
+
+      {/* Content wrapper */}
+      <div className="relative z-10">
       {/* Hero Section */}
       <div className="pt-24 pb-12 px-4">
         <div className="max-w-7xl mx-auto">
@@ -124,6 +136,7 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+      </div>
     </div>
   );
 };
