@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronRight, Code, Globe, Zap, Menu, X, ArrowRight, Users, Shield, Sun, Moon, Play  } from 'lucide-react';
+import { ChevronRight, Code, Globe, Zap, Menu, X, ArrowRight, Users, Shield, Sun, Moon, Play } from 'lucide-react';
 import { SpotlightSlider } from '../components/Spotlighter';
 const HomePage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,15 +35,28 @@ const HomePage = () => {
       name: "Sarah Johnson",
       role: "CTO, TechCorp",
       content: "TechNova has transformed our digital infrastructure. The results have been phenomenal.",
-      image: "https://mailmktg.makemytrip.com/mybusiness/images/CTM-2.jpg"
+      image: "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
     },
     {
       name: "Mike Chen",
       role: "Founder, StartupX",
       content: "Implementing TechNova's solutions doubled our productivity within months.",
-      image: "https://mailmktg.makemytrip.com/mybusiness/images/CTM-2.jpg"
+      image: "https://media.istockphoto.com/id/1300972574/photo/millennial-male-team-leader-organize-virtual-workshop-with-employees-online.jpg?s=612x612&w=0&k=20&c=uP9rKidKETywVil0dbvg_vAKyv2wjXMwWJDNPHzc_Ug="
+    },
+    {
+      name: "Emily Davis",
+      role: "Product Manager, InnovateHub",
+      content: "Thanks to TechNova, we streamlined our processes and achieved remarkable efficiency.",
+      image: "https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+    },
+    {
+      name: "James Carter",
+      role: "CEO, FutureTech",
+      content: "Partnering with TechNova was one of the best decisions we’ve made for our company’s growth.",
+      image: "https://media.istockphoto.com/id/1303206558/photo/headshot-portrait-of-smiling-businessman-talk-on-video-call.jpg?s=612x612&w=0&k=20&c=hMJhVHKeTIznZgOKhtlPQEdZqb0lJ5Nekz1A9f8sPV8="
     }
   ];
+
 
   const toggleTheme = () => {
     setIsDarkTheme(!isDarkTheme);
@@ -110,7 +123,7 @@ const HomePage = () => {
                 <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-102 transition-transform">
                   <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/20 mix-blend-overlay" />
                   <img
-                    src="https://mailmktg.makemytrip.com/mybusiness/images/CTM-2.jpg"
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Digital Innovation"
                     className="w-full h-auto object-cover"
                   />
